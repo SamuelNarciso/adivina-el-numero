@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+		<title>Adivina el numero</title>
+	</head>
+	<body>
+		<div class="w3-container">
+			<header class="w3-teal w3-container w3-center">
+				<h1 class="w3-xxxlarge">Adivina el numero</h1>
+			</header>
+
+			<section class="w3-container">
+				<p class="w3-xlarge">
+					Seleccionamos un número aleatorioentre el
+					<span class="w3-text-red"> 1 y 100. </span> Fijate si puedes
+					adivinarlo en <span class="w3-text-red">10 intentos o menos</span>.
+					Vamos a decirte si tu numero es más alto o más bajo.
+				</p>
+				<div class="w3-panel">
+					<input
+						id="entrada-valor"
+						type="text"
+						class="w3-input w3-margin w3-xlarge"
+						placeholder="Ingresa un valor"
+					/>
+					<button
+						id="resultado"
+						type="submit"
+						class="w3-btn w3-deep-orange w3-round w3-large w3-hover-pink"
+					>
+						Enviar resultado
+					</button>
+				</div>
+			</section>
+
+			<div class="w3-container w3-large w3-hide" id="informacion">
+				<div class=" w3-panel w3-pale-blue w3-leftbar w3-border-blue " id="caja-resultados">
+                    <p >Intentos anteriores: <span id="intentos-anteriores">  </span></p>
+					<div id="caja-alerta" class="w3-padding">
+						<p id="alerta"></p>
+					</div>
+					<p id="pista"></p>
+				</div>
+			</div>
+
+			<button id="juegoNuevo" type="submit" class="w3-btn w3-blue w3-round w3-large w3-hide">
+				Jugar nuevamente
+			</button>
+		</div>
+		<script src="juego.js"></script>
+	</body>
+</html>
